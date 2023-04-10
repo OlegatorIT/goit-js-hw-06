@@ -10,9 +10,14 @@ function handleSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    alert("Будьласка заповніть всі поля !");
+    return alert("Будьласка заповніть всі поля !");
   }
 
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  const newUser = {
+    Login: `${email.value}`,
+    Password: `${password.value}`,
+  };
+
+  console.log(newUser);
   event.currentTarget.reset();
 }
