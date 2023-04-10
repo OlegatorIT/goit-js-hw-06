@@ -26,6 +26,3 @@ function addImg(value) {
 }
 
 console.log(addImg(images));
-
-// 3 завдання - так само, в мап робимо розмітку,
-//   потім insertAdjacentHTML використовуємо 1 раз за циклом.
