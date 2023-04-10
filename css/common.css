@@ -23,22 +23,3 @@ button {
   cursor: pointer;
   text-decoration: none;
 }
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-items: center;
-}
-
-.item3 {
-  text-decoration: none;
-  list-style: none;
-  border: 2px solid #212121;
-  border-width: 30px;
-}
-
-.img-task3 {
-  display: block;
-}

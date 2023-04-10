@@ -18,7 +18,7 @@ function addImg(value) {
   const createImages = value
     .map(
       (el) =>
-        `<li class="item3"><img class="img-task3"src = ${el.url} alt = ${el.alt}  width = "250"/></li>`
+        `<li class="gallery-item"><img class="gallery-img"src = ${el.url} alt = ${el.alt} /></li>`
     )
     .join(" ");
   list.insertAdjacentHTML("beforeend", createImages);
@@ -26,3 +26,30 @@ function addImg(value) {
 }
 
 console.log(addImg(images));
+
+//==========================================//
+
+// const pEl = document.querySelector("p");
+// pEl.insertAdjacentHTML(
+//   "afterend",
+//   '<button type="button" class="btn"> Show IMG >>></button> '
+// );
+
+// const btnEl = document.querySelector("button");
+// const list = document.querySelector(".gallery");
+
+// let currentIndex = -1;
+
+// btnEl.addEventListener("click", addImg);
+
+// function addImg() {
+//   if (currentIndex === images.length - 1) {
+//     alert("The end");
+//   }
+//   currentIndex++;
+
+//   list.insertAdjacentHTML(
+//     "beforeend",
+//     `<li class="gallery-item"><img class="gallery-img"src = ${images[currentIndex].url} alt = ${images[currentIndex].alt} /></li>`
+//   );
+// }
